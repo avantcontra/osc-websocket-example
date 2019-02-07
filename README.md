@@ -22,7 +22,7 @@ Just use the common OSC libraries to parse the data, such as [osc.js](https://gi
 ## Example
 
 - MaxMSP
-- [Processing](https://github.com/avantcontra/osc-websocket-example/tree/develop/processing)
+- [Processing](https://github.com/avantcontra/osc-websocket-example/tree/master/processing)
 - p5.js 
 - Unity
 - ...
