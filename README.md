@@ -7,7 +7,7 @@ Examples about receiving OSC data through WebSocket.
 Sometimes I meet situations where I need OSC but cannot use UDP.  
 
 Such as sending OSC message from browser-based p5js to Processing / MaxMSP / Unity.  
-And my OSC controller called **BugOSC**, a [`WeChat Mini Program`](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18110512)), which also does not support UDP.
+And my OSC controller called **BugOSC**, a [`WeChat Mini Program`](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18110512), which also does not support UDP.
 
 However, although they don't support UDP, they support WebSocket, another network transmission protocol.
 
