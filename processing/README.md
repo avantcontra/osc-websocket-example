@@ -1,4 +1,4 @@
-Processing example about receiving OSC data through WebSocket server.
+Processing example about receiving OSC data through WebSocket.
 
 ## WebSocket
 
