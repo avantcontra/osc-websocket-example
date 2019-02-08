@@ -59,3 +59,14 @@ typings/
 
 # next.js build output
 .next
+.DS_Store
+
+# unity
+.vs
+Temp
+unity/osc-websocket/Library
+unity/osc-websocket/ProjectSettings
+unity/osc-websocket/UnityPackageManager
+unity/osc-websocket/*.meta
+unity/osc-websocket/Assets/*.meta
+unity/osc-websocket/Assets/vvvvosc/*.meta
