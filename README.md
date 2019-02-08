@@ -24,9 +24,10 @@ Use library [osc.js](https://github.com/colinbdclark/osc.js) to pack and parse O
 
 - MaxMSP
 - [Processing](https://github.com/avantcontra/osc-websocket-example/tree/master/processing)
-    - OSC lib is  [oscP5](http://www.sojamo.de/libraries/oscp5/)
+    - OSC lib is [oscP5](http://www.sojamo.de/libraries/oscp5/)
 - p5.js 
-- Unity
+- [Unity](https://github.com/avantcontra/osc-websocket-example/tree/master/unity)
+    - OSC packet parser is [VVVVUnityOSC](https://github.com/frankiezafe/VVVVUnityOSC)
 - ...
 
 
