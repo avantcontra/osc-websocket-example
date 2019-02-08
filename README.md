@@ -11,7 +11,7 @@ And my OSC controller called **BugOSC**, a [`WeChat Mini Program`](https://devel
 
 However, although they don't support UDP, they support WebSocket, another network transmission protocol.
 
-Here are examples about receiving OSC data through WebSocket sent from p5js for example. 
+Here are examples about receiving OSC data through WebSocket sent from p5js for example.  
 The transporting data are binary packets (ArrayBuffer, byte[]) following the standard OSC format.
 
 ## WebSocket Client
