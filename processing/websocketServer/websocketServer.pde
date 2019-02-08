@@ -2,47 +2,42 @@ import websockets.*;
 import oscP5.*;
 import netP5.*;
 
-OscP5 oscP5;
-NetAddress myRemoteLocation;
-
 WebsocketServer ws;
-int now;
+
+OscP5 oscP5;
+NetAddress oscHost;
+
 float x,y;
 
 void setup(){
   size(400,400);
   
-  now = millis();
   x = 0;
   y = 0;
 
   //WebSocket
-  ws = new WebsocketServer(this,12345,"/");
+  ws = new WebsocketServer(this, 12345, "/");
   //OSC (UDP)
   oscP5 = new OscP5(this,12346);
-  
-  /* myRemoteLocation is a NetAddress. a NetAddress takes 2 parameters,
-   * an ip address and a port number. myRemoteLocation is used as parameter in
-   * oscP5.send() when sending osc packets to another computer, device, 
-   * application. usage see below. for testing purposes the listening port
-   * and the port of the remote location address are the same, hence you will
-   * send messages back to this sketch.
-   */
-  myRemoteLocation = new NetAddress("127.0.0.1",12346);
+  oscHost = new NetAddress("127.0.0.1", 12346);
 }
 
 void draw(){
   background(0);
   ellipse(x,y,10,10);
-  
-  //send from websocket server to client
-  //if(millis()>now+500){
-  //  now=millis();
-  //  ws.sendMessage(str(now));
-  //}
 }
 
-//String data 
+
+//Binary data received from WebSocket Client 
+void webSocketServerEvent(byte[] buf, int offset, int length){
+  //send to OSC (UDP) to parse the data
+  OscP5.flush(buf, oscHost);
+  
+  x = random(width);
+  y = random(height);
+}
+
+//String data received from WebSocket Client
 void webSocketServerEvent(String msg){
   println(msg);
   //JSONObject json = parseJSONObject(msg);
@@ -56,16 +51,8 @@ void webSocketServerEvent(String msg){
   y = random(height);
 }
 
-//Binary data 
-void webSocketServerEvent(byte[] buf, int offset, int length){
-  //send to OSC (UDP)
-  OscP5.flush(buf, myRemoteLocation);
-  
-  x = random(width);
-  y = random(height);
-}
 
-//receive OSC (UPD)
+//OSC (UPD) data received to parse
 void oscEvent(OscMessage theOscMessage) {
   /* check if theOscMessage has the address pattern we are looking for. */
   println("#### received osc msg. address: " + theOscMessage.addrPattern() + ", type: " + theOscMessage.typetag());
