@@ -1,5 +1,7 @@
 Processing example about receiving OSC data through WebSocket.
 
+![p5js-processing](http://floatcc.intplusplus.org/p5js-processing.gif)
+
 ## WebSocket
 
 Processing is as a WebSocket Server in example. Actually as a Client is also OK.
