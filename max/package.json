@@ -1,0 +1,12 @@
+{
+  "name": "max-osc-websocket",
+  "author": "Contra",
+  "license": "MIT",
+  "scripts": {
+    "start": "node max-osc-websocket.js"
+  },
+  "dependencies": {
+    "osc": "^2.2.4",
+    "ws": "^4.0.0"
+  }
+}
