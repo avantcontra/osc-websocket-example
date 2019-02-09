@@ -5,3 +5,11 @@ html, body {
 canvas {
   display: block;
 }
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: cornflowerblue;
+}
