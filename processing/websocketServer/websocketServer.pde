@@ -70,4 +70,10 @@ void oscEvent(OscMessage theOscMessage) {
     print(theOscMessage.addrPattern() + " with typetag f.");
     println(" values: "+firstValue);
   }
+  if(theOscMessage.checkTypetag("s")) {
+    /* parse theOscMessage and extract the values from the osc message arguments. */
+    String firstValue = theOscMessage.get(0).stringValue();  
+    print(theOscMessage.addrPattern() + " with typetag s.");
+    println(" values: "+firstValue);
+  }
 }
