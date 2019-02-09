@@ -1,7 +1,7 @@
 # osc-websocket-example
 Examples about receiving OSC data through WebSocket.
 
-
+<img src="http://floatcc.intplusplus.org/p5js-max.gif" alt="p5js-max" width="640">
 
 ## Background
 Sometimes I meet situations where I need OSC but cannot use UDP.  
@@ -13,6 +13,8 @@ However, although they don't support UDP, they support WebSocket, another networ
 
 Here are examples about receiving OSC data through WebSocket sent from p5js for example.  
 The transporting data are binary packets (ArrayBuffer, byte[]) following the standard OSC format.
+
+<img src="http://floatcc.intplusplus.org/p5js-processing.gif" alt="p5js-processing" width="640">
 
 ## WebSocket Client
 
