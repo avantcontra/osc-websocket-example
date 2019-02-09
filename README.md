@@ -21,7 +21,7 @@ The transporting data are binary packets (ArrayBuffer, byte[]) following the sta
 The p5js sketch in [p5js-client](https://github.com/avantcontra/osc-websocket-example/tree/master/p5js-client).
 
 Use library [osc.js](https://github.com/colinbdclark/osc.js) to pack and parse OSC data.   
-And osc.js itself supports UDP, Serial port, WebSocket and TCP, Wow!
+And osc.js itself supports UDP (NodeJS), Serial port, WebSocket (browser and NodeJS) and TCP, Wow!
 
 ## WebSocket Server
 
