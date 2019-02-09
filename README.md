@@ -7,27 +7,36 @@ Examples about receiving OSC data through WebSocket.
 Sometimes I meet situations where I need OSC but cannot use UDP.  
 
 Such as sending OSC message from browser-based p5js to Processing / MaxMSP / Unity.  
-And my OSC controller called **BugOSC**, a [`WeChat Mini Program`](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18110512)), which also does not support UDP.
+And my OSC controller called **BugOSC**, a [`WeChat Mini Program`](https://developers.weixin.qq.com/miniprogram/en/introduction/index.html?t=18110512), which also does not support UDP.
 
 However, although they don't support UDP, they support WebSocket, another network transmission protocol.
 
-Here are examples about receiving OSC data through WebSocket sent from p5js for example.
+Here are examples about receiving OSC data through WebSocket sent from p5js for example.  
+The transporting data are binary packets (ArrayBuffer, byte[]) following the standard OSC format.
 
 ## WebSocket Client
 
 The p5js sketch in [p5js-client](https://github.com/avantcontra/osc-websocket-example/tree/master/p5js-client).
 
-Use library [osc.js](https://github.com/colinbdclark/osc.js) to pack and parse OSC data.  
-The transporting data are binary packets (ArrayBuffer, byte[]) following the standard OSC format.
+Use library [osc.js](https://github.com/colinbdclark/osc.js) to pack and parse OSC data.   
+And osc.js itself supports UDP, Serial port, WebSocket and TCP, Wow!
 
 ## WebSocket Server
 
 - MaxMSP
 - [Processing](https://github.com/avantcontra/osc-websocket-example/tree/master/processing)
-    - OSC lib is  [oscP5](http://www.sojamo.de/libraries/oscp5/)
-- p5.js 
-- Unity
-- ...
+    - WebSocket lib is [Websockets for Processing](https://github.com/avantcontra/processing_websockets) which I forked to fix a bug about byte support. 
+    - OSC lib is [oscP5](http://www.sojamo.de/libraries/oscp5/)
+- [Unity](https://github.com/avantcontra/osc-websocket-example/tree/master/unity)
+    - WebSocket lib is [websocket-sharp](https://github.com/sta/websocket-sharp)
+    - OSC packet parser is [VVVVUnityOSC](https://github.com/frankiezafe/VVVVUnityOSC)
+- [VVVV](https://github.com/avantcontra/osc-websocket-example/tree/master/vvvv) (Readme only)
+- [Pure Data](https://github.com/avantcontra/osc-websocket-example/tree/master/puredata) (Readme only)
+
+## *Bridge 
+
+Of course also can make a third party NodeJS/Processing/Python/etc BRIDGE focus on receiving data through WebSocket and forwarding to other OSC receivers:   
+`p5js-client <---WebSocket---> BRIDGE <---OSC---> Max/Processing/Unity/Arduino/etc`
 
 
 ----
