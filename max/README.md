@@ -1,5 +1,7 @@
 Max example about receiving OSC data through WebSocket.
 
+![p5js-max](http://floatcc.intplusplus.org/p5js-max.gif)
+
 There have been already some Max to web browser showcases:
 
 - [xebra.js from MiraWeb](https://github.com/Cycling74/miraweb/tree/master/packages/xebra.js)
