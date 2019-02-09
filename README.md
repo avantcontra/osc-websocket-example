@@ -32,6 +32,11 @@ And osc.js itself supports UDP, Serial port, WebSocket and TCP, Wow!
     - OSC packet parser is [VVVVUnityOSC](https://github.com/frankiezafe/VVVVUnityOSC)
 - ...
 
+## *Bridge 
+
+Of course also can make a third party NodeJS/Processing/Python/etc BRIDGE focus on receiving data through WebSocket and forwarding to other OSC receivers:   
+`p5js-client <---WebSocket---> BRIDGE <---OSC---> Max/Processing/Unity/Arduino/etc`
+
 
 ----
 
