@@ -2,13 +2,19 @@ Unity example about receiving OSC data through WebSocket.
 
 ## WebSocket
 
-...
+[websocket-sharp](https://github.com/sta/websocket-sharp)
 
+It's a C# implementation. I have built a `websocket-sharp.dll` and added it into `Assets/` folder.    
+If the dll does not work for you, you can [build it yourself](https://github.com/sta/websocket-sharp#self-build).
 
 
 ## OSC data parse
-[VVVVUnityOSC](https://github.com/frankiezafe/VVVVUnityOSC).
 
+There are serveral OSC libraries for Unity, but actually only OSC data packing and parsing (unpacking) is necessary here.   
+[VVVVUnityOSC](https://github.com/frankiezafe/VVVVUnityOSC) has convenient methods to do this.
+
+packing: `new OSCMessage("/unity/midi", 87).BinaryData`    
+unpacking: `OSCPacket.Unpack(oscPacketRawData)`
 
 
 -----
