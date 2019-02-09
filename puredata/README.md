@@ -5,7 +5,7 @@ Pure Data example about receiving OSC data through WebSocket.
 There are some useful libs below:
 
 - [Websocket-Server-in-a-Patch](https://sourceforge.net/projects/websocketserverinapatch/)    
-"websocket-server in a patch.pd" single Pd file contains a reusable and fully documented websocket server, meant as an easy way to experiment with Pure Data <-> web-browsers communications through websockets, without the need of other software (like node.js or python) or any specific external to compile (just one deken library is required).
+> "websocket-server in a patch.pd" single Pd file contains a reusable and fully documented websocket server, meant as an easy way to experiment with Pure Data <-> web-browsers communications through websockets, without the need of other software (like node.js or python) or any specific external to compile (just one deken library is required).
 
 - [pd-ws](https://github.com/chr15m/pd-ws)    
 Communicate between Pure Data & web browser over a websocket.
