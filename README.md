@@ -30,7 +30,8 @@ And osc.js itself supports UDP, Serial port, WebSocket and TCP, Wow!
 - [Unity](https://github.com/avantcontra/osc-websocket-example/tree/master/unity)
     - WebSocket lib is [websocket-sharp](https://github.com/sta/websocket-sharp)
     - OSC packet parser is [VVVVUnityOSC](https://github.com/frankiezafe/VVVVUnityOSC)
-- ...
+- [VVVV](https://github.com/avantcontra/osc-websocket-example/tree/master/vvvv) (Readme only)
+- [Pure Data](https://github.com/avantcontra/osc-websocket-example/tree/master/puredata) (Readme only)
 
 ## *Bridge 
 
