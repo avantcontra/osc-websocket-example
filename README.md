@@ -18,14 +18,17 @@ The transporting data are binary packets (ArrayBuffer, byte[]) following the sta
 
 The p5js sketch in [p5js-client](https://github.com/avantcontra/osc-websocket-example/tree/master/p5js-client).
 
-Use library [osc.js](https://github.com/colinbdclark/osc.js) to pack and parse OSC data.  
+Use library [osc.js](https://github.com/colinbdclark/osc.js) to pack and parse OSC data.   
+And osc.js itself supports UDP, Serial port, WebSocket and TCP, Wow!
 
 ## WebSocket Server
 
 - MaxMSP
 - [Processing](https://github.com/avantcontra/osc-websocket-example/tree/master/processing)
+    - WebSocket lib is [Websockets for Processing](https://github.com/avantcontra/processing_websockets) which I forked to fix a bug about byte support. 
     - OSC lib is [oscP5](http://www.sojamo.de/libraries/oscp5/)
 - [Unity](https://github.com/avantcontra/osc-websocket-example/tree/master/unity)
+    - WebSocket lib is [websocket-sharp](https://github.com/sta/websocket-sharp)
     - OSC packet parser is [VVVVUnityOSC](https://github.com/frankiezafe/VVVVUnityOSC)
 - ...
 
