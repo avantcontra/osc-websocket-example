@@ -23,7 +23,7 @@ And osc.js itself supports UDP, Serial port, WebSocket and TCP, Wow!
 
 ## WebSocket Server
 
-- MaxMSP
+- [Max](https://github.com/avantcontra/osc-websocket-example/tree/master/max)
 - [Processing](https://github.com/avantcontra/osc-websocket-example/tree/master/processing)
     - WebSocket lib is [Websockets for Processing](https://github.com/avantcontra/processing_websockets) which I forked to fix a bug about byte support. 
     - OSC lib is [oscP5](http://www.sojamo.de/libraries/oscp5/)
