@@ -60,7 +60,7 @@ public class WebSocketOSC : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        wssv = new WebSocketServer("ws://127.0.0.1:12345");
+        wssv = new WebSocketServer("ws://0.0.0.0:12345");
 
         wssv.AddWebSocketService<Echo>("/");
 
