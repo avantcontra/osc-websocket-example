@@ -23,4 +23,4 @@ Contra
 - website: [floatbug.com/contra](https://www.floatbug.com/contra)
 - facebook: [avantcontra](https://facebook.com/avantcontra)
 - twitter: [avantcontra](https://twitter.com/avantcontra)
-- 微信公众号/知乎专栏：[浮生开方](https://zhuanlan.zhihu.com/floatlab)
+- 微信公众号/知乎专栏：[实验编程](https://zhuanlan.zhihu.com/floatlab)
