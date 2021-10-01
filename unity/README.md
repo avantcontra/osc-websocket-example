@@ -1,6 +1,6 @@
 Unity example about receiving OSC data through WebSocket.
 
-![p5js-unity](http://floatcc.intplusplus.org/p5js-unity.gif)
+![p5js-unity](http://float.intplusplus.cn/p5js-unity.gif)
 
 ## WebSocket
 
@@ -27,7 +27,7 @@ Cheers~
 Contra
 
 - patreon (**buy me a coffee** XD): [avantcontra](https://www.patreon.com/avantcontra)
-- website: [floatbug.com/contra](https://www.floatbug.com/contra)
+- website: [floatbug.com/contra](https://www.floatbug.com/)
 - facebook: [avantcontra](https://facebook.com/avantcontra)
 - twitter: [avantcontra](https://twitter.com/avantcontra)
-- 微信公众号/知乎专栏：[浮生开方](https://zhuanlan.zhihu.com/floatlab)
+- 微信公众号/知乎专栏：[实验编程](https://zhuanlan.zhihu.com/floatlab)
